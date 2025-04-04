@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Brian Kibet, a passionate web developer with a love for creating functional and beautiful web experiences.</p>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor of Science in Information Systems and Knowledge Management, Masinde Muliro University of Science and Technology</p>
+        <a href="public/cv.pdf" download>Download My CV</a>
+    </section>
+
+    <section id="interests">
+        <h2>Interests</h2>
+        <p><strong>Web Development:</strong> Exploring modern frameworks and best practices.</p>
+        <p><strong>Innovations:</strong>  Keeping up with emerging trends in technology.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>WordPress</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>To-Do List App</h3>
+            <p>A simple app to manage your tasks.</p>
+            <a href="public/todo/todo.html" target="_blank">View Project</a>
+        </div>
+        <div>
+            <h3>Simple Calculator</h3>
+            <p>A basic calculator for simple arithmetic operations.</p>
+            <a href="public/calculator/calculator.html" target="_blank">View Project</a>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent the default form submission
+            alert('Thank you for your message! I will get back to you soon.');
+            form.reset(); // Clear the form fields
+        });
+    </script>
+
+</body>
+</html>
